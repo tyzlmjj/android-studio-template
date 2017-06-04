@@ -1,9 +1,11 @@
 package ${packageName}.activities;
 
-import ${superClassFqcn};
+
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentTransaction;
+
+import ${applicationPackage}.R;
 
 /**
  * MVP Activity 基础类
