@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<template
+    format="2"
+    revision="2"
+    name="MVP base"
+    minApi="7"
+    minBuildApi="14"
+    description="Creates base classes for MVP">
+
+    <category value="MVP" />
+
+    <formfactor value="Mobile" />
+
+    <parameter
+        id="packageName"
+        name="Package name"
+        type="string"
+        constraints="package"
+        default="com.mycompany.myapp" />
+
+    <thumbs>
+        <thumb>template_mvp_base.png</thumb>
+    </thumbs>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>  
