@@ -19,7 +19,8 @@
     <merge from="AndroidManifest.xml.ftl"
              to="${escapeXmlAttribute(manifestOut)}/AndroidManifest.xml" />
 
+    <#if generateActivityTitle!true>
     <merge from="res/values/manifest_strings.xml.ftl"
              to="${escapeXmlAttribute(resOut)}/values/strings.xml" />
-
+    </#if>
 </recipe>

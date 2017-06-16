@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentTransaction;
 
-import ${applicationPackage}.R;
+import ${packageName}.R;
 
 /**
  * MVP Activity 基础类
