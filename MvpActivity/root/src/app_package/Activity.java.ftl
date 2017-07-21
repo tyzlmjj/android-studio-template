@@ -1,8 +1,8 @@
 package ${packageName};
 
-import ${applicationPackage}.activities.BaseMVPActivity;
+import ${applicationPackage}.activities.BaseMvpActivity;
 
-public class ${mvpName}Activity extends BaseMVPActivity<${mvpName}Contract.Presenter,${mvpName}Fragment> {
+public class ${mvpName}Activity extends BaseMvpActivity<${mvpName}Contract.Presenter,${mvpName}Fragment> {
 
     @Override
     protected ${mvpName}Fragment createView() {
@@ -11,6 +11,6 @@ public class ${mvpName}Activity extends BaseMVPActivity<${mvpName}Contract.Prese
 
     @Override
     protected ${mvpName}Contract.Presenter createPresenter(${mvpName}Fragment view) {
-        return new ${mvpName}Presenter(view);
+        return new ${mvpName}Presenter(view,getDataRepository());
     }
 }

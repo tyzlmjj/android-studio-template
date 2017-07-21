@@ -3,9 +3,9 @@ package ${packageName};
 import android.view.View;
 
 import ${applicationPackage}.R;
-import ${applicationPackage}.activities.BaseMVPFragment;
+import ${applicationPackage}.activities.BaseMvpFragment;
 
-public class ${mvpName}Fragment extends BaseMVPFragment<${mvpName}Contract.Presenter> implements ${mvpName}Contract.View {
+public class ${mvpName}Fragment extends BaseMvpFragment<${mvpName}Contract.Presenter> implements ${mvpName}Contract.View {
 
     @Override
     public int getLayoutRes() {
