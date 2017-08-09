@@ -7,6 +7,5 @@ class ${mvpName}Presenter  extends BasePresenterImpl<${mvpName}Contract.View> im
     ${mvpName}Presenter(${mvpName}Contract.View view,DataRepository dataRepository) {
         super(view,dataRepository);
     }
-    }
 
 }
