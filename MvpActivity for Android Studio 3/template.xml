@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<template
+    format="2"
+    revision="2"
+    name="MVP Activity"
+    minApi="7"
+    minBuildApi="14"
+    description="Creates a new MVP activity">
+
+    <category value="MVP" />
+    <formfactor value="Mobile" />
+
+    <parameter
+        id="mvpName"
+        name="MVP name"
+        type="string"
+        constraints="nonempty"
+        default=""
+        help="The name of the MVP classes to create" />
+
+    <parameter
+        id="generateActivityTitle"
+        name="Generate Title"
+        type="boolean"
+        default="false"
+        help="If true, generated activity title" />
+
+    <parameter
+        id="activityTitle"
+        name="Title"
+        type="string"
+        default="${mvpName}"
+        suggest="${mvpName}"
+        visibility="generateActivityTitle"
+        help="The name of the activity. For launcher activities, the application title."/>
+
+    <parameter
+        id="packageName"
+        name="Package name"
+        type="string"
+        constraints="package"
+        default="com.mycompany.myapp" />
+
+    <thumbs>
+        <thumb>template_mvp_activity.png</thumb>
+    </thumbs>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>  
